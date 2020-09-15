@@ -7,6 +7,8 @@ import Logout from "../component/Logout";
 import {GlobalProvider} from "../context/GlobalState";
 import BudgetChart from "../component/chart"
 import Dash from "../component/Backtodash"
+import 'react-bulma-components/basic/react-bulma-components.min.css';
+
 
 import "./BudGet.css"
 
