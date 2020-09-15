@@ -12,9 +12,9 @@ const SearchStocks = () => {
         <form>
             <div className="search">
                 <label className="white-text text-lighten-3" htmlFor="text"><h5>Enter an exact stock symbol to search </h5></label>
-                <input className="white-text text-lighten-3" type="text" maxlength="5" value={value} onChange={onChange} placeholder="Enter stock symbol..." />
+                <input className="stocks" type="text" maxlength="5" value={value} onChange={onChange} placeholder="Enter stock symbol..." />
             </div>
-            <button type="submit" className="fa fa-search" className="searchbtn"><a target="_blank" href={`${url}${value}`}>Search</a></button>
+            <button type="submit" className="fa fa-search" className="searchbtn"><a target="_blank" rel="noopener noreferrer" href={`${url}${value}`}>Search</a></button>
         </form>
         </>
     )

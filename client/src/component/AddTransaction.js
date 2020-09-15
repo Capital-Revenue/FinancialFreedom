@@ -7,12 +7,14 @@ const AddTransaction = () => {
     const [value, setAmount] = useState (0);
     const {addTransaction } = useContext(GlobalContext);
     const { user } = useFirebaseAuth()
+    console.log(user);
     const onSubmit = e => {
         e.preventDefault();
     const newTransaction ={
         _id: Math.floor(Math.random() * 100000000),
         name,
-        value: +value
+        value: +value,
+        userId: user.uid
     }
     addTransaction(newTransaction);
     }

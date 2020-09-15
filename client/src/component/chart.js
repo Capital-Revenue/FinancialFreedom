@@ -15,36 +15,7 @@ function BudgetChart() {
     ).toFixed(2);
 
     const charts = {
-      //only one data type is working for the pie chart need to do more research to get expenses and total working
-      seriesPieChart: [income],
-      optionsPieChart: {
-        chart: {
-          type: 'pie',
-        },
-        labels: ['Income', 'Expenses', 'Total Leftover'],
-        plotOptions: {
-          pie: {
-            customScale: 0.8
-          }
-        },
-        responsive: [{
-          breakpoint: 480,
-          options: {
-            chart: {
-              stacked: false,
-              stackType: "100%",
-              toolbar: {
-                show: false
-              },
-              width: 200
-            },
-            legend: {
-              position: 'bottom'
-            }
-          }
-        }]
-      },
-      optionsBar: {
+        optionsBar: {
         chart: {
           stacked: false,
           stackType: "100%",
@@ -114,17 +85,6 @@ function BudgetChart() {
     };
     return (
       <div className="app">
-        <div className="row">
-          <div className="col pie-chart">
-            <Chart
-              options={charts.optionsPieChart}
-              series={charts.seriesPieChart}
-              type="pie"
-              width="500"
-            />
-          </div>
-        </div>
-
         <div className="row">
           <div className="col percentage-chart">
             <Chart

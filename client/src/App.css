@@ -4,6 +4,16 @@
 
 .stocks {
   text-align: left;
+  color: #000000;
+  font-weight: bold;
+}
+
+.charts{
+  font-weight: bold;
+}
+
+.charts:hover{
+  color: red;
 }
 
 .App-logo {

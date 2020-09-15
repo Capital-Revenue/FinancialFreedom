@@ -9,12 +9,12 @@ function DashBoard() {
     <div className="DashBoard">
       <div className="introImage center"></div>
       {/* company name */}
-      <p className="introText uperLeft">Capital-Revenue!</p>
+      <h2 className="introText uperLeft">Capital-Revenue!</h2>
       <div className="container center">
         {/* project name */}
-        <p className="introText center">DashBoard!</p>
+        <h4 className="introText center">DashBoard!</h4>
 
-        <p className="introText center">What would you like to do</p>
+        <h5 className="introText center">What would you like to do?</h5>
       </div>
       <div>
       <Link to="/BudGet"><button className="btn waves-effect waves-light" id="logIn-submit" name="action">Adjust your Budget
